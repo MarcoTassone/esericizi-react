@@ -1,9 +1,13 @@
 
 function App() {
 
+  const name = (name) => {
+    return <h1>Hello, {name}</h1>
+  }
+
   return (
     <>
-      {/* se la variabile un elemento JSX invece di una stringa, React lo tratterà come un child component e proverà a fare il rendering*/}
+      {name(<h1>Marco</h1>)}
     </>
   )
 }
