@@ -4,7 +4,7 @@ export function Welcome(name){
     return (
     <>
         <p>Welcome, {name.prop}</p>
-        <Age age="22"/>
+        <Age age={22}/>
     </>
     )
 }
