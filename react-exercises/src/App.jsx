@@ -1,13 +1,13 @@
 
-function App(name) {
+function App() {
 
-  const nome = 'Marco';
-
-  name = nome;
+  const name = (name) => {
+    return <h1>Hello, {name}</h1>
+  }
 
   return (
     <>
-      <h1>Hello, {name}!</h1>
+      {name("Marco")}
     </>
   )
 }
