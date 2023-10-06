@@ -1,10 +1,13 @@
-import Sum from "./components/Sum";
 
 function App() {
 
+  const sum = (a, b) =>{
+    return <h2>{a + b}</h2>
+  }
+
   return (
     <>
-      <Sum />
+      {sum(10, 20)}
     </>
   )
 }
