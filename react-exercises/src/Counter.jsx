@@ -8,15 +8,10 @@ export function Counter({initialValue, incrementAmount}){
         setCount((prev) => prev + incrementAmount)
     }
 
-    const decrement = () => {
-        setCount((prev) => prev - incrementAmount)
-    }
-
     return(
         <div>
             <CounterDisplay counter={counter}/>
             <button onClick={increment}>Increase</button>
-            <button onClick={decrement}>Decrease</button>
         </div>
     )
 }
