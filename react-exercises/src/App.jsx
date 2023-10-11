@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <Welcome prop="Marco"/>
+      <Welcome name="Marco" age={22}/>
     </>
   )
 }

@@ -1,8 +1,8 @@
-export function Welcome(name){
+export function Welcome(props){
     return (
     <>
-        <p>Welcome, {name.prop}</p>
-        <p>Your age is .</p>
+        <p>Welcome, {props.name}</p>
+        <p>Your age is {props.age} .</p>
     </>
     )
 }
