@@ -1,9 +1,10 @@
+import { FocusableInput } from "./components/FocusableInput"
 
 function App() {
 
   return (
     <>
-      
+      <FocusableInput/>
     </>
   )
 }
