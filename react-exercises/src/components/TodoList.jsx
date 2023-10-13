@@ -10,7 +10,6 @@ export function TodoList(){
 
     function addItem(){
         setItem([...item, newItem])
-        setNewItem('')
     }
 
     return(
