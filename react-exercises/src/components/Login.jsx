@@ -6,9 +6,7 @@ export function Login({onLogin}){
     const [checkbox, setCheckbox] = useState(false);
 
     function handleLogin(){
-        if (username && password) {
-            onLogin({username, password})
-        }
+        onLogin({username, password})
     }
     
     function handleUsernameInputChange(e){
