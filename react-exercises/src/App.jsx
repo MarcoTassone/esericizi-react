@@ -1,10 +1,28 @@
+import { Link, Route, Routes } from "react-router-dom"
+import { Counter } from "./components/Counter"
+import { NotFound } from "./components/NotFound"
+import { ShowGithubUser } from "./components/ShowGithubUser"
+import { Welcome } from "./components/Welcome"
+import { GithubUserList } from "./components/GithubUserList"
 
 function App() {
 
   return (
-    <>
-      
-    </>
+    <div>
+
+      <div>
+        <Link to="/">Home</Link> | <Link to="/counter">Counter</Link> | <Link to="users">Github User</Link>
+      </div>
+    
+    <Routes>
+      <Route path="/" element={<Welcome name="Marco"/>}/>
+      <Route path="/counter" element={<Counter initialValue={0} incrementAmount={1}/>}/>
+      <Route path="users" element={<ShowGithubUser />}>
+        <Route path=":username" element={<GithubUserList />}/>
+      </Route>
+      <Route path="*" element={<NotFound />}/>
+    </Routes>
+    </div>
   )
 }
 
